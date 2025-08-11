@@ -65,7 +65,7 @@ const BookingRequestsPage: React.FC = () => {
     setProcessingBookingId(bookingId);
     
     try {
-      const response = await api.post(`/bookings/${bookingId}/status/`, {
+      await api.post(`/bookings/${bookingId}/status/`, {
         status: newStatus
       });
       

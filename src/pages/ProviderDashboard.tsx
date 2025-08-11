@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { Link } from 'react-router-dom';
-import { Home, Plus, Calendar, DollarSign, Users, Building, LogOut, User } from 'lucide-react';
+import { Plus, Calendar, DollarSign, Users, Building, LogOut, User } from 'lucide-react';
 import api from '../utils/api';
 
 interface DashboardSummary {

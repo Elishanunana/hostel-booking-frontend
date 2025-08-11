@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { Home, Building, User, Mail, Lock, Phone, MapPin, CreditCard, AlertCircle } from 'lucide-react';
-import api from '../utils/api';
 import axios from 'axios';
 
 interface ProviderRegistrationForm {
@@ -14,22 +13,6 @@ interface ProviderRegistrationForm {
   phone_number: string;
   address: string;
   bank_details: string;
-}
-
-interface RegistrationResponse {
-  message: string;
-  user: {
-    username: string;
-    role: string;
-    business_name: string;
-    contact_person: string;
-    email: string;
-    phone_number: string;
-    address: string;
-    bank_details: string;
-  };
-  refresh: string;
-  access: string;
 }
 
 const ProviderRegisterPage: React.FC = () => {

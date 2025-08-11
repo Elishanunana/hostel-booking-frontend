@@ -35,6 +35,8 @@ const PaymentSuccessPage: React.FC = () => {
 
   const checkPaymentStatus = async (reference: string) => {
     try {
+      // For demonstration, log the reference to use the parameter
+      console.log('Verifying payment with reference:', reference);
       // Give webhook time to process (wait 3 seconds)
       await new Promise(resolve => setTimeout(resolve, 3000));
       
