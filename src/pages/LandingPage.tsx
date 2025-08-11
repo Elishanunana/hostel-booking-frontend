@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Home, Users, Shield, MapPin } from 'lucide-react';
+import { Home, Users, Shield } from 'lucide-react';
 
 const LandingPage: React.FC = () => {
   return (

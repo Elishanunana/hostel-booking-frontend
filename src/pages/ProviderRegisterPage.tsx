@@ -75,7 +75,7 @@ const ProviderRegisterPage: React.FC = () => {
     try {
       // Create a clean request without any auth headers
       const response = await axios.post(
-        'https://test-backend-deploy-svk3.onrender.com/api/register/provider/', 
+        `${import.meta.env.VITE_API_URL}/api/register/provider/`, 
         formData,
         {
           headers: {

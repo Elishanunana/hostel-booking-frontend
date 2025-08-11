@@ -34,7 +34,9 @@ const StudentHomePage: React.FC = () => {
 
   const fetchFeaturedRooms = async () => {
     try {
-      const response = await fetch('https://test-backend-deploy-svk3.onrender.com/api/rooms/?is_available=true');
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/rooms/?is_available=true`
+      );
       if (response.ok) {
         const data = await response.json();
         // Show first 8 available rooms

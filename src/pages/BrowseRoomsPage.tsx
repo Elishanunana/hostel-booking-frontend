@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { Home, MapPin, Users, Search, Filter, ArrowLeft, Star } from 'lucide-react';
+import { Home, MapPin, Users, Search, Filter, ArrowLeft } from 'lucide-react';
 import api from '../utils/api';
-
+ 
 interface Room {
   id: number;
   room_number: string;
